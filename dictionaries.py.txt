@@ -1,0 +1,56 @@
+car= {
+"brand" :"Ford",
+"electric": False
+}
+print (car)
+car= dict()
+#checking item
+car={
+"brand": "Mercedes",
+"model": "Mustang",
+"year": 1964
+}
+x= car["model"]
+#key word
+if "model" in car:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+#changing dict items
+car["year"]= 2005
+car["brand"]= "Lexus"
+print(car)
+#updating dict
+car.update({"year": 2019})
+print(car)
+#adding items in the dict
+car["color"] ="red", "blue",
+print(car)
+#removing items(way1)
+car.pop("model")
+print(car)
+#(way2)
+car.popitem()
+print(car)
+#loop through a dict
+for x in car:
+  print(x)
+for x in car.values():
+  print(x)
+#nested dict
+vehicle={
+"car1":{
+ "brand" :"mercedes",
+ "model" :"folkswagen",
+ "year" :2015
+},
+"car2":{
+ "brand" :"maserati",
+ "model" :"toyota",
+ "year" :2018
+},
+"car3":{
+"brand":"tesla",
+"model":"tesla1",
+"year":2021
+}
+}
+print(vehicle)
